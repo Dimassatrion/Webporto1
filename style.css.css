@@ -6,17 +6,20 @@
 }
 html{
     scroll-behavior: smooth;
+    z-index: 1000;  
 }
 body{
-    background: #080808;
-    color: #fff;
+    background: #ffffff;
+    color: #000000;
+    
 }
 #header{
     width: 100%;
     height: 100%;
-    background-image: url(img/background.png);
+    background-color: #ffffff;
     background-size: cover;
     background-position: center;
+    
 }
 .container{
     padding: 10px 10%;
@@ -26,7 +29,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 
 .logo {
@@ -40,7 +43,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -49,7 +52,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #00c8ff;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -67,12 +70,12 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color: #00c8ff;
 }
 /*------about-------*/
 #about{
     padding: 80px 0;
-    color: #ababab;    
+    color: #3f3f3f;    
 }
 .row{
     display: flex;
@@ -92,7 +95,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 50px;
     font-weight: 600;
-    color: #fff;
+    color: #000000;
 }
 .tab-title{
     display: flex;
@@ -109,7 +112,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #00c8ff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -123,7 +126,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: #2b4e57;
     font-size: 14px;
 }
 .tab-contents{
@@ -143,7 +146,7 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 .services-list div{
-    background: #262626;
+    background: #cecece;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -160,7 +163,7 @@ nav ul li a:hover::after{
     margin-bottom: 15px;
 }
 .services-list div:hover{
-    background: #ff004f;
+    background: #00c8ff;
     transform: translateY(-10px);
 }
 /*----portofolio-----*/
@@ -187,7 +190,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(255, 255, 255, 0.6), #00c8ff);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -207,7 +210,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #00c8ff;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -234,7 +237,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #00c8ff;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -245,20 +248,20 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #00c8ff;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color:#ff004f;
+    color:#00c8ff;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #00c8ff;
     border-radius: 10px;
-    color: #ffffff;
-    border-color: #ff004f;
+    color: #000000;
+    border-color: #00c8ff;
 }
 .contact-right form{
     width: 100%;
@@ -267,10 +270,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #cecece;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #000000;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -284,7 +287,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px;
-    background: #262626;
+    background: #cecece;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -295,7 +298,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(img/phone-background-01.png);
+        background-color: #fff;
     }
     .header-text{
         margin-top: 100%;
@@ -309,7 +312,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #00c8ff;
         position: fixed;
         top: 0;
         right: -200px;
@@ -352,7 +355,3 @@ nav .fas{
         font-size: 14px;
     }
 }
-
-
-
-
